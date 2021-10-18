@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+<nav class="navbar navbar-expand-sm bg-white justify-content-center">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#">Link 1</a>
