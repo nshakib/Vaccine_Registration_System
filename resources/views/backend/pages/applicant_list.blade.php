@@ -6,7 +6,7 @@
  * @Last Modified time: 2021-10-26 01:27:18
  */
 ?>
-@extends('backend.layouts .master')
+@extends('backend.layouts.master')
 
 @section('content')
 <div class="flex flex-col md:flex-row">
