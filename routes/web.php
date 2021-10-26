@@ -1,6 +1,26 @@
 <?php
+/**
+ * @Author: Md Nazmus Shakib
+ * @Date:   2021-10-20 09:48:30
+ * @Last Modified by:   Md Nazmus Shakib
+ * @Last Modified time: 2021-10-26 01:24:23
+ */
+namespace App\Http\Controllers\Frontend;
 
+//use App\Http\Controllers\Backend;
 use Illuminate\Support\Facades\Route;
+
+//admin
+use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\ApplicantListController;
+
+//Frontend
+
+use App\Http\Controllers\Frontend\ApplicantController;
+use App\Http\Controllers\Frontend\DashboardController;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +33,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+//Route::get('/', function () {
+//   return view('welcome');
+//});
+Route::get('/',[DashboardController::class,'index'])->name('Dashboard');
+
+Route::get('/registration',[ApplicantController::class, 'index'])->name('Registration');
+
+
+//Backend
+Route::get('/admin',[UserController::class,'index'])->name('user');
+Route::get('/admin/applicantlist',[ApplicantListController::class,'index'])->name('applicant');

@@ -1,7 +1,53 @@
+/**
+ * @Author: Md Nazmus Shakib
+ * @Date:   2021-10-20 09:48:30
+ * @Last Modified by:   Md Nazmus Shakib
+ * @Last Modified time: 2021-10-22 02:11:54
+ */
 .banner-area{
     display: block;
     background-image: url('../img/banner/banner-bg.jpg');
     background-size: cover;
     /* background-position: 50%; */
     background-repeat: no-repeat;
+}
+
+.reg-information
+{
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.phone, .info{
+    padding: 0 32px;
+}
+.info{
+    padding: 0;
+}
+.new-reg-bg {
+    background: #ebf0ff;
+}
+.su-inner-banner-area {
+    padding: 1rem;
+}
+.su-inner-banner-area h3 {
+    color: #00113e;
+    font-weight: 700;
+    font-size: 22px;
+}
+.reg-user{
+    position: relative;
+    transform: rotate(-13deg);
+        height: auto;
+        width: auto;
+        object-fit: cover;
+        margin-bottom: 10px;
+}
+.reg-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 27.2%;
 }
